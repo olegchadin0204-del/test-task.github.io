@@ -9,13 +9,7 @@ import { SideBarComponent } from '../../shared/components/side-bar/side-bar.comp
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterLink,
-    HeaderComponent,
-    SideBarComponent,
-  ],
+  imports: [CommonModule, FormsModule, HeaderComponent, SideBarComponent],
   templateUrl: './menu-page.component.html',
   styleUrl: './menu-page.component.css',
 })
