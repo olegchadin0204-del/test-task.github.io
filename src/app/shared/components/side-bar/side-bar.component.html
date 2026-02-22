@@ -1,0 +1,7 @@
+<div class="side-bar">
+  @for (type of types(); track type.id) {
+    <div class="side-bar-type" (click)="setType(type.name)">
+      <span>{{ type.name }}</span>
+    </div>
+  }
+</div>

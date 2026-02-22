@@ -1,0 +1,29 @@
+<div class="menu-container">
+  <app-header
+    [selectedCount]="selectedCount()"
+    [selectedItems]="selectedItems()"
+    [totalValue]="totalValue()"
+    [type]="type()"
+  ></app-header>
+
+  <app-side-bar [setType]="setType"></app-side-bar>
+  <div class="menu-list">
+    <h3>Меню</h3>
+    <div class="menu-items">
+      @for (item of menuItems(); track item.id) {
+        <label class="menu-item">
+          <div class="item-info">
+            <span class="item-name">{{ item.name }}</span>
+            <span class="item-value">{{ item.value }}</span>
+          </div>
+          <input
+            type="checkbox"
+            [ngModel]="item.selected"
+            (ngModelChange)="toggleItem(item.id)"
+            class="item-checkbox"
+          />
+        </label>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+:host {
+  width: 100%;
+}
+
+h2 {
+  color: #1a3b5d;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h3 {
+  color: #1a3b5d;
+  font-size: 1.1rem;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eef2f6;
+}
+
+.menu-container {
+  border-radius: 36px;
+  padding: 24px;
+  box-shadow: 0 25px 45px -12px rgba(0, 30, 50, 0.25);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.selected-label {
+  display: block;
+  color: #4a6f8a;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.selected-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: #2e5a9c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(46, 90, 156, 0.3);
+}
+
+.no-selection {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  color: #9aaebf;
+  text-align: center;
+  font-style: italic;
+}
+
+.menu-list {
+  background: #f8faff;
+  border-radius: 24px;
+  padding: 20px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.menu-item:hover {
+  transform: translateX(4px);
+  border-color: #2e5a9c;
+  box-shadow: 0 8px 16px rgba(46, 90, 156, 0.15);
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #1a3b5d;
+  font-size: 1.1rem;
+}
+
+.item-value {
+  color: #2e5a9c;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.item-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #2e5a9c;
+  border-radius: 8px;
+}
+
+@media (max-width: 400px) {
+  .menu-container {
+    padding: 16px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

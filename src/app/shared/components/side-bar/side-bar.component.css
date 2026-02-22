@@ -1,0 +1,27 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #6b7f8f;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(135deg, #f8faff 0%, #f0f5fd 100%);
+  border-radius: 24px;
+  padding: 20px;
+  border: 1px solid rgba(46, 90, 156, 0.1);
+  height: 100%;
+}
+
+.side-bar-type {
+  cursor: pointer;
+
+  padding: 16px;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}

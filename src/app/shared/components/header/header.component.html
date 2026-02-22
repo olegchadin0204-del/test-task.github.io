@@ -1,0 +1,21 @@
+<header class="menu-header">
+  <div class="header-top">
+    <a routerLink="/" class="back-link">Назад</a>
+  </div>
+
+  <div class="header-info">
+    <div class="header-type">
+      <span class="stat-label">Раздел:{{ type }}</span>
+    </div>
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-label">Выбрано пунктов:</span>
+        <span class="stat-value">{{ selectedCount }}</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Общее значение:</span>
+        <span class="stat-value">{{ totalValue }}</span>
+      </div>
+    </div>
+  </div>
+</header>
